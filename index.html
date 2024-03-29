@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pincode</title>
-    
-  <link rel="stylesheet" href="JS project.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="JS project.css">
  
 </head>
 <body>
 
   <script src="Js Project.js" defer></script>
   
-  <div id="di1">
-    <marquee style="font-size: 20px; padding: 10px; color:pink;background-color: black;">Department of Posts Ministry of Communications Goverment of India</marquee>
+  <div id="main">
+    <marquee id="scroll">** Enter a Pincode and find the Areas List, of the Specific Pincode. All Over India. **</marquee>
 
   <hr> 
-   <div id="di">
+   <div id="totalimg">
     
-  <img src="./post logo.png" id="im1" alt="post logo"></img>
+  <img src="./zipcode.jpeg" id="im1" alt="post logo"></img>
 
-       <div id="di2">
+       <div id="images3">
 
   <img  src="./G20.jpeg" alt="G20" id="im2">
   <img src="./national logo.jpeg" id="im4" alt="national logo">
@@ -31,11 +31,12 @@
    </div>
 
   <hr>
-  <div id="di3">
-       <h1 id="h">ZIP Codes</h1>
-       <form action="" id="fo">
-        <input type="search" id="inpt" placeholder="Enter pincode"><br>
-        <input type="submit" id="btn">
+  <div id="zipform">
+       <h1 id="zipT">ZIP Codes</h1>
+       <form action="" id="totalform">
+        <input type="search" id="inpt" placeholder="Enter Pincode" required><br>
+        <button type="submit" class="btn btn-success">Submit</button>
+
     </form>
   </div>
   </div>
