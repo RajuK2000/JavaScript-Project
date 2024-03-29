@@ -101,10 +101,10 @@ background-color: grey;
    } 
    @media screen and (min-width:660px) and (max-width:1300px){ 
      #images3{
-      padding-left: 580px;
+      padding-left: 400px;
      }
      #totalimg{
-      padding-left: 30px;
+      padding-left: 40px;
      }
      #im1,#im2,#im4,#im3{
       height: 90px;
