@@ -22,14 +22,11 @@
 
                   localStorage.setItem("ZIPcodes",JSON.stringify(zip))
              
-        //var zip=JSON.parse(localStorage.getItem("ZIPcodes"))
+        var zip=JSON.parse(localStorage.getItem("ZIPcodes"))
          
-        var con=document.createElement("div")
-        con.setAttribute("id","tdiv")
-        di.appendChild(con)
         var tab=document.createElement("table")
         tab.setAttribute("class","table table-dark table-striped")
-        con.appendChild(tab)
+        di.appendChild(tab)
         var tr1=document.createElement("tr")
         tab.appendChild(tr1)
         tr1.setAttribute("id","tr11")
