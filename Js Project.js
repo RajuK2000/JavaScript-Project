@@ -79,7 +79,7 @@
            }) 
 
           } else{
-            alert(`${e.target[0].value} is Not a Valid ZipCode Pleace Enter a Valid ZipCode`)
+            alert(`${e.target[0].value} is Not a Valid ZipCode Please Enter a Valid ZipCode`)
           }
     
         })
