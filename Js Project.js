@@ -1,10 +1,12 @@
 
-
     var di=document.getElementById("di11")
-
+    
       document.forms[0].addEventListener("submit",(e)=>{
                di.innerHTML=""
               e.preventDefault()
+            //  console.log(e.target[0].value.toString())
+       if(e.target[0].value.toString().length===6 && e.target[0].value>=0){
+
       fetch(`https://india-pincode-with-latitude-and-longitude.p.rapidapi.com/api/v1/pincode/${e.target[0].value}`,
           { 
             methode:"GET",
@@ -18,10 +20,12 @@
               })
                 .then((zip)=>{
                   console.log(zip)
-                  e.target[0].value=""
 
-                  localStorage.setItem("ZIPcodes",JSON.stringify(zip))
-             
+                
+              if(zip.length>0){
+                  
+        localStorage.setItem("ZIPcodes",JSON.stringify(zip))    
+
         var zip=JSON.parse(localStorage.getItem("ZIPcodes"))
          
         var tab=document.createElement("table")
@@ -68,6 +72,14 @@
         tr2.appendChild(td14)
         tr2.appendChild(td15)
        }
+      
+            } else{
+              alert(`NO data found in this ZipCode : ${e.target[0].value}`)
+              }
            }) 
+
+          } else{
+            alert(`${e.target[0].value} is Not a Valid ZipCode Pleace Enter a Valid ZipCode`)
+          }
     
         })

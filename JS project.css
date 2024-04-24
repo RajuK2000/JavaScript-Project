@@ -1,6 +1,6 @@
 body{
    text-align: center;
-   background-image:radial-gradient(lightgray,white,lightblue);
+   background-image:url(./bgc.jpg);
  }
 #im1,#im2,#im4,#im3{
    height: 120px;
@@ -15,7 +15,7 @@ padding:10px ;
 display: flex;
 flex-direction: row;
 padding-left: 70px;
-background-color:lightgray;
+background-color:rgba(228, 236, 201, 0.76);
 }
 #images3{
   display: flex;
@@ -26,7 +26,7 @@ background-color:lightgray;
 #zipform{
 background-position: 10px;
 padding-bottom: 10px;
-background-color: grey;
+background-color: rgba(215, 218, 175, 0.413);
 }
 #totalform{
  display: flex;
@@ -83,9 +83,8 @@ background-color: grey;
   width: 100px;
   height: 30px;
   font-size: 10px;
-  border-radius: 20px;
-  background-color:darkgray;
-  box-shadow: 5px 5px 5px;
+  border-radius: 10px;
+  background-color:rgb(163, 171, 133);
   text-align: center;
 }
 #inpt:hover{
@@ -127,3 +126,7 @@ background-color: grey;
    }
    
   }
+  
+
+ 
+  
