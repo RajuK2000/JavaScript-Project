@@ -65,7 +65,7 @@ background-color: rgba(215, 218, 175, 0.413);
     color:pink;
     background-color: black;
    }
-   @media screen and (min-width:320px) and (max-width:650px){ 
+   @media screen and (min-width:300px) and (max-width:650px){ 
 
 #im2,#im4,#im3,#im1{
  padding: 2px;
